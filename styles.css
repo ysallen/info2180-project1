@@ -1,11 +1,218 @@
-/* Add your CSS to this file */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+/* Header */
+header {
+    background-color: white;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #5A67D8;
+}
+
+/* Hero overview */
+.overview-hero {
+    background-color: #E2E8F0;
+    padding: 40px 0;
+}
+
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overview-hero-image {
+    flex: 1;
+}
+
+.overview-hero-image img {
+    width: 100%;
+}
+
+.overview-hero-text {
+    flex: 2;
+}
+
+/* Learn About */
+.learn-about {
+    padding: 40px 0;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #48BB78;
+    margin-top: 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* COVID-19 testing (the class name is spelled "desciption" in the starter HTML) */
+.testing {
+    background-color: #4A5568;
+    color: white;
+    padding: 60px 0;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.testing-desciption {
+    flex: 1;
+}
+
+.testing .btn {
+    background-color: #48BB78;
+}
+
+/* Recent Stories */
+.stories {
+    padding: 40px 0;
+}
+
+.stories h2 {
+    color: #5A67D8;
+}
+
+.stories article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stories article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.article-body h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.stories a {
+    color: #5A67D8;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+}
+
+.message {
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #4A5568;
+    color: white;
+    padding: 15px 0;
 }
